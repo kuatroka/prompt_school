@@ -1,0 +1,61 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - heading "🏞️ National Parks Voting" [level=1]
+  - paragraph: Vote for your favorite national park and see the ELO rankings!
+- heading "Which park do you prefer?" [level=2]
+- 'button "Grand Teton National Park Grand Teton National Park ELO: 1215 Votes: 1"':
+  - img "Grand Teton National Park"
+  - heading "Grand Teton National Park" [level=3]
+  - text: "ELO: 1215 Votes: 1"
+- 'button "Channel Islands National Park Channel Islands National Park ELO: 1217 Votes: 3"':
+  - img "Channel Islands National Park"
+  - heading "Channel Islands National Park" [level=3]
+  - text: "ELO: 1217 Votes: 3"
+- heading "🏆 Top Rankings" [level=2]
+- text: "1"
+- paragraph: Theodore Roosevelt National Park
+- paragraph: "ELO: 1301 • 9W-1L"
+- text: "2"
+- paragraph: Joshua Tree National Park
+- paragraph: "ELO: 1260 • 4W-0L"
+- text: "3"
+- paragraph: Badlands National Park
+- paragraph: "ELO: 1248 • 3W-0L"
+- text: "4"
+- paragraph: Virgin Islands National Park
+- paragraph: "ELO: 1245 • 4W-1L"
+- text: "5"
+- paragraph: Dry Tortugas National Park
+- paragraph: "ELO: 1231 • 2W-0L"
+- text: "6"
+- paragraph: Everglades National Park
+- paragraph: "ELO: 1231 • 2W-0L"
+- text: "7"
+- paragraph: North Cascades National Park
+- paragraph: "ELO: 1229 • 3W-1L"
+- text: "8"
+- paragraph: Mesa Verde National Park
+- paragraph: "ELO: 1227 • 4W-3L"
+- text: "9"
+- paragraph: Great Sand Dunes National Park
+- paragraph: "ELO: 1226 • 3W-1L"
+- text: "10"
+- paragraph: American Samoa National Park
+- paragraph: "ELO: 1219 • 2W-1L"
+- heading "📊 Recent Votes" [level=2]
+- paragraph: Joshua Tree National Park beat Petrified Forest National Park
+- paragraph: 8:56:18 PM
+- paragraph: Pinnacles National Park beat Lassen Volcanic Park
+- paragraph: 8:51:53 PM
+- paragraph: Badlands National Park beat Petrified Forest National Park
+- paragraph: 8:51:42 PM
+- paragraph: Virgin Islands National Park beat Big Bend National Park
+- paragraph: 8:51:31 PM
+- paragraph: Badlands National Park beat North Cascades National Park
+- paragraph: 8:51:29 PM
+- alert
+- button "Open Next.js Dev Tools":
+  - img
+```

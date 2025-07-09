@@ -1,0 +1,33 @@
+<div class="container mx-auto p-6">
+  <h1 class="text-3xl font-bold mb-6">Vote for Your Favorite National Park</h1>
+
+    <div id="vote-pair" phx-update="replace" class="flex justify-around mb-8">
+        <div class="cursor-pointer p-4 flex flex-col items-center bg-white rounded shadow hover:shadow-lg transition" phx-click="vote" phx-value-winner={@park1.id} phx-value-loser={@park2.id}>
+                  <img src={@park1.image_url} alt={@park1.name} width="256" height="160" loading="lazy" class="w-64 h-40 object-cover rounded" />
+      <p class="mt-2 font-semibold"><%= @park1.name %></p>
+    </div>
+
+        <div class="cursor-pointer p-4 flex flex-col items-center bg-white rounded shadow hover:shadow-lg transition" phx-click="vote" phx-value-winner={@park2.id} phx-value-loser={@park1.id}>
+                  <img src={@park2.image_url} alt={@park2.name} width="256" height="160" loading="lazy" class="w-64 h-40 object-cover rounded" />
+      <p class="mt-2 font-semibold"><%= @park2.name %></p>
+    </div>
+  </div>
+
+  <div class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">Overall Rankings</h2>
+    <ol class="list-decimal list-inside">
+      <%= for park <- @parks do %>
+        <li class="mb-1"><%= park.name %> &mdash; Rating: <%= Float.round(park.rating, 2) %></li>
+      <% end %>
+    </ol>
+  </div>
+
+  <div>
+    <h2 class="text-2xl font-bold mb-4">Recent Votes</h2>
+    <ul class="list-disc list-inside">
+      <%= for vote <- @recent_votes do %>
+        <li class="mb-1"><%= vote.winner.name %> beat <%= vote.loser.name %> at <%= NaiveDateTime.to_string(vote.inserted_at) %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

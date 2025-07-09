@@ -1,0 +1,61 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - heading "🏞️ National Parks Voting" [level=1]
+  - paragraph: Vote for your favorite national park and see the ELO rankings!
+- heading "Which park do you prefer?" [level=2]
+- 'button "Redwood National Park Redwood National Park ELO: 1218 Votes: 3"':
+  - img "Redwood National Park"
+  - heading "Redwood National Park" [level=3]
+  - text: "ELO: 1218 Votes: 3"
+- 'button "Pinnacles National Park Pinnacles National Park ELO: 1200 Votes: 4"':
+  - img "Pinnacles National Park"
+  - heading "Pinnacles National Park" [level=3]
+  - text: "ELO: 1200 Votes: 4"
+- heading "🏆 Top Rankings" [level=2]
+- text: "1"
+- paragraph: Theodore Roosevelt National Park
+- paragraph: "ELO: 1301 • 9W-1L"
+- text: "2"
+- paragraph: Badlands National Park
+- paragraph: "ELO: 1260 • 4W-0L"
+- text: "3"
+- paragraph: Joshua Tree National Park
+- paragraph: "ELO: 1260 • 4W-0L"
+- text: "4"
+- paragraph: Virgin Islands National Park
+- paragraph: "ELO: 1245 • 4W-1L"
+- text: "5"
+- paragraph: Everglades National Park
+- paragraph: "ELO: 1231 • 2W-0L"
+- text: "6"
+- paragraph: North Cascades National Park
+- paragraph: "ELO: 1229 • 3W-1L"
+- text: "7"
+- paragraph: Mesa Verde National Park
+- paragraph: "ELO: 1227 • 4W-3L"
+- text: "8"
+- paragraph: Great Sand Dunes National Park
+- paragraph: "ELO: 1226 • 3W-1L"
+- text: "9"
+- paragraph: American Samoa National Park
+- paragraph: "ELO: 1219 • 2W-1L"
+- text: "10"
+- paragraph: Redwood National Park
+- paragraph: "ELO: 1218 • 2W-1L"
+- heading "📊 Recent Votes" [level=2]
+- paragraph: Yosemite National Park beat Pinnacles National Park
+- paragraph: 8:59:58 PM
+- paragraph: Acadia National Park beat Gates of the Arctic National Park
+- paragraph: 8:59:56 PM
+- paragraph: Badlands National Park beat Kings Canyon National Park
+- paragraph: 8:59:51 PM
+- paragraph: Wrangell-St. Elias National Park beat Dry Tortugas National Park
+- paragraph: 8:59:51 PM
+- paragraph: Joshua Tree National Park beat Petrified Forest National Park
+- paragraph: 8:56:18 PM
+- alert
+- button "Open Next.js Dev Tools":
+  - img
+```

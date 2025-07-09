@@ -1,0 +1,61 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - heading "🏞️ National Parks Voting" [level=1]
+  - paragraph: Vote for your favorite national park and see the ELO rankings!
+- heading "Which park do you prefer?" [level=2]
+- 'button "Channel Islands National Park Channel Islands National Park ELO: 1200 Votes: 0"':
+  - img "Channel Islands National Park"
+  - heading "Channel Islands National Park" [level=3]
+  - text: "ELO: 1200 Votes: 0"
+- 'button "Isle Royale National Park Isle Royale National Park ELO: 1200 Votes: 0"':
+  - img "Isle Royale National Park"
+  - heading "Isle Royale National Park" [level=3]
+  - text: "ELO: 1200 Votes: 0"
+- heading "🏆 Top Rankings" [level=2]
+- text: "1"
+- paragraph: Bryce Canyon National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "2"
+- paragraph: North Cascades National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "3"
+- paragraph: Black Canyon of the Gunnison National Park
+- paragraph: "ELO: 1216 • 1W-0L"
+- text: "4"
+- paragraph: Olympic National Park
+- paragraph: "ELO: 1216 • 1W-0L"
+- text: "5"
+- paragraph: American Samoa National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "6"
+- paragraph: Arches National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "7"
+- paragraph: Badlands National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "8"
+- paragraph: Biscayne National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "9"
+- paragraph: Capitol Reef National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "10"
+- paragraph: Carlsbad Caverns National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- heading "📊 Recent Votes" [level=2]
+- paragraph: North Cascades National Park beat Yellowstone National Park
+- paragraph: 10:07:39 PM
+- paragraph: Bryce Canyon National Park beat Canyonlands National Park
+- paragraph: 10:07:38 PM
+- paragraph: Black Canyon of the Gunnison National Park beat Lassen Volcanic Park
+- paragraph: 10:07:38 PM
+- paragraph: Olympic National Park beat Petrified Forest National Park
+- paragraph: 10:07:37 PM
+- paragraph: Canyonlands National Park beat Acadia National Park
+- paragraph: 10:07:37 PM
+- alert
+- button "Open Next.js Dev Tools":
+  - img
+```

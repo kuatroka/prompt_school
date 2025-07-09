@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --color-background-dark: #0a0a0a;
+  --color-foreground-dark: #ededed;
+  
+  /* Opacity utilities */
+  --opacity-0: 0;
+  --opacity-20: 0.2;
+  --opacity-50: 0.5;
+  --opacity-75: 0.75;
+  --opacity-100: 1;
+  
+  /* Background opacity utilities */
+  --bg-opacity-0: 0;
+  --bg-opacity-20: 0.2;
+  --bg-opacity-50: 0.5;
+  --bg-opacity-75: 0.75;
+  --bg-opacity-100: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-background-dark);
+    --color-foreground: var(--color-foreground-dark);
+  }
+}
+
+body {
+  color: var(--color-foreground);
+  background: var(--color-background);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}

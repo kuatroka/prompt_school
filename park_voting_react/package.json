@@ -1,0 +1,26 @@
+{
+  "name": "park_voting_react",
+  "module": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run server.js",
+    "start": "bun run server.js",
+    "build": "echo 'No build step required for this setup'"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.2",
+    "@types/bun": "latest",
+    "autoprefixer": "^10.4.21",
+    "playwright": "^1.53.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

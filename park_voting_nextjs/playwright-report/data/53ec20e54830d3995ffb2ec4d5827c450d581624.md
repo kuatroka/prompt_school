@@ -1,0 +1,61 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - heading "🏞️ National Parks Voting" [level=1]
+  - paragraph: Vote for your favorite national park and see the ELO rankings!
+- heading "Which park do you prefer?" [level=2]
+- 'button "Gates of the Arctic National Park Gates of the Arctic National Park ELO: 1184 Votes: 1"':
+  - img "Gates of the Arctic National Park"
+  - heading "Gates of the Arctic National Park" [level=3]
+  - text: "ELO: 1184 Votes: 1"
+- 'button "Congaree National Park Congaree National Park ELO: 1231 Votes: 2"':
+  - img "Congaree National Park"
+  - heading "Congaree National Park" [level=3]
+  - text: "ELO: 1231 Votes: 2"
+- heading "🏆 Top Rankings" [level=2]
+- text: "1"
+- paragraph: Congaree National Park
+- paragraph: "ELO: 1231 • 2W-0L"
+- text: "2"
+- paragraph: Cuyahoga Valley National Park
+- paragraph: "ELO: 1231 • 2W-0L"
+- text: "3"
+- paragraph: Great Sand Dunes National Park
+- paragraph: "ELO: 1231 • 2W-0L"
+- text: "4"
+- paragraph: Kenai Fjords National Park
+- paragraph: "ELO: 1231 • 2W-0L"
+- text: "5"
+- paragraph: Theodore Roosevelt National Park
+- paragraph: "ELO: 1231 • 2W-0L"
+- text: "6"
+- paragraph: Grand Canyon National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "7"
+- paragraph: Mammoth Cave National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "8"
+- paragraph: North Cascades National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "9"
+- paragraph: Redwood National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "10"
+- paragraph: Voyageurs National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- heading "📊 Recent Votes" [level=2]
+- paragraph: White Sands National Park beat Zion National Park
+- paragraph: 10:08:06 PM
+- paragraph: Isle Royale National Park beat Mesa Verde National Park
+- paragraph: 10:08:06 PM
+- paragraph: Great Sand Dunes National Park beat Glacier Bay National Park
+- paragraph: 10:08:05 PM
+- paragraph: Great Smoky Mountains National Park beat Gateway Arch National Park
+- paragraph: 10:08:05 PM
+- paragraph: Great Sand Dunes National Park beat New River Gorge National Park
+- paragraph: 10:08:04 PM
+- alert
+- button "Open Next.js Dev Tools":
+  - img
+```

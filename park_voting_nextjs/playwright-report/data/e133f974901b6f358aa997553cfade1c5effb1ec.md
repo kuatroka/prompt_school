@@ -1,0 +1,51 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - heading "🏞️ National Parks Voting" [level=1]
+  - paragraph: Vote for your favorite national park and see the ELO rankings!
+- heading "Which park do you prefer?" [level=2]
+- 'button "Yellowstone National Park Yellowstone National Park ELO: 1200 Votes: 0"':
+  - img "Yellowstone National Park"
+  - heading "Yellowstone National Park" [level=3]
+  - text: "ELO: 1200 Votes: 0"
+- 'button "Petrified Forest National Park Petrified Forest National Park ELO: 1200 Votes: 0"':
+  - img "Petrified Forest National Park"
+  - heading "Petrified Forest National Park" [level=3]
+  - text: "ELO: 1200 Votes: 0"
+- heading "🏆 Top Rankings" [level=2]
+- text: "1"
+- paragraph: Acadia National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "2"
+- paragraph: American Samoa National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "3"
+- paragraph: Arches National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "4"
+- paragraph: Badlands National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "5"
+- paragraph: Big Bend National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "6"
+- paragraph: Biscayne National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "7"
+- paragraph: Black Canyon of the Gunnison National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "8"
+- paragraph: Bryce Canyon National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "9"
+- paragraph: Canyonlands National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "10"
+- paragraph: Capitol Reef National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- heading "📊 Recent Votes" [level=2]
+- alert
+- button "Open Next.js Dev Tools":
+  - img
+```

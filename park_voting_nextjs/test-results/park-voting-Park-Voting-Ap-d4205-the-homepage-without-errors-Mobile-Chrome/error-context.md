@@ -1,0 +1,61 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - heading "🏞️ National Parks Voting" [level=1]
+  - paragraph: Vote for your favorite national park and see the ELO rankings!
+- heading "Which park do you prefer?" [level=2]
+- 'button "North Cascades National Park North Cascades National Park ELO: 1217 Votes: 1"':
+  - img "North Cascades National Park"
+  - heading "North Cascades National Park" [level=3]
+  - text: "ELO: 1217 Votes: 1"
+- 'button "Lake Clark National Park Lake Clark National Park ELO: 1184 Votes: 1"':
+  - img "Lake Clark National Park"
+  - heading "Lake Clark National Park" [level=3]
+  - text: "ELO: 1184 Votes: 1"
+- heading "🏆 Top Rankings" [level=2]
+- text: "1"
+- paragraph: Cuyahoga Valley National Park
+- paragraph: "ELO: 1231 • 2W-0L"
+- text: "2"
+- paragraph: Kenai Fjords National Park
+- paragraph: "ELO: 1231 • 2W-0L"
+- text: "3"
+- paragraph: Bryce Canyon National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "4"
+- paragraph: North Cascades National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "5"
+- paragraph: Redwood National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "6"
+- paragraph: Indiana Dunes National Park
+- paragraph: "ELO: 1216 • 1W-0L"
+- text: "7"
+- paragraph: Joshua Tree National Park
+- paragraph: "ELO: 1216 • 1W-0L"
+- text: "8"
+- paragraph: Olympic National Park
+- paragraph: "ELO: 1216 • 1W-0L"
+- text: "9"
+- paragraph: Zion National Park
+- paragraph: "ELO: 1216 • 1W-0L"
+- text: "10"
+- paragraph: Haleakala National Park
+- paragraph: "ELO: 1202 • 1W-1L"
+- heading "📊 Recent Votes" [level=2]
+- paragraph: Kenai Fjords National Park beat Hot Springs National Park
+- paragraph: 10:07:55 PM
+- paragraph: Indiana Dunes National Park beat Pinnacles National Park
+- paragraph: 10:07:54 PM
+- paragraph: Kenai Fjords National Park beat Biscayne National Park
+- paragraph: 10:07:54 PM
+- paragraph: Joshua Tree National Park beat Canyonlands National Park
+- paragraph: 10:07:53 PM
+- paragraph: Cuyahoga Valley National Park beat Haleakala National Park
+- paragraph: 10:07:47 PM
+- alert
+- button "Open Next.js Dev Tools":
+  - img
+```

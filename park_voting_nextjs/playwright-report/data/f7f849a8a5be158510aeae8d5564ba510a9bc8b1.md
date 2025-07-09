@@ -1,0 +1,61 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - heading "🏞️ National Parks Voting" [level=1]
+  - paragraph: Vote for your favorite national park and see the ELO rankings!
+- heading "Which park do you prefer?" [level=2]
+- 'button "Kenai Fjords National Park Kenai Fjords National Park ELO: 1231 Votes: 2"':
+  - img "Kenai Fjords National Park"
+  - heading "Kenai Fjords National Park" [level=3]
+  - text: "ELO: 1231 Votes: 2"
+- 'button "Guadalupe Mountains National Park Guadalupe Mountains National Park ELO: 1200 Votes: 0"':
+  - img "Guadalupe Mountains National Park"
+  - heading "Guadalupe Mountains National Park" [level=3]
+  - text: "ELO: 1200 Votes: 0"
+- heading "🏆 Top Rankings" [level=2]
+- text: "1"
+- paragraph: Cuyahoga Valley National Park
+- paragraph: "ELO: 1231 • 2W-0L"
+- text: "2"
+- paragraph: Kenai Fjords National Park
+- paragraph: "ELO: 1231 • 2W-0L"
+- text: "3"
+- paragraph: Grand Canyon National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "4"
+- paragraph: Mammoth Cave National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "5"
+- paragraph: North Cascades National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "6"
+- paragraph: Redwood National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "7"
+- paragraph: Voyageurs National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "8"
+- paragraph: Arches National Park
+- paragraph: "ELO: 1216 • 1W-0L"
+- text: "9"
+- paragraph: Joshua Tree National Park
+- paragraph: "ELO: 1216 • 1W-0L"
+- text: "10"
+- paragraph: Olympic National Park
+- paragraph: "ELO: 1216 • 1W-0L"
+- heading "📊 Recent Votes" [level=2]
+- paragraph: Great Smoky Mountains National Park beat Gates of the Arctic National Park
+- paragraph: 10:08:00 PM
+- paragraph: Grand Canyon National Park beat Great Smoky Mountains National Park
+- paragraph: 10:08:00 PM
+- paragraph: Arches National Park beat Death Valley National Park
+- paragraph: 10:07:59 PM
+- paragraph: Mammoth Cave National Park beat Indiana Dunes National Park
+- paragraph: 10:07:57 PM
+- paragraph: Voyageurs National Park beat Bryce Canyon National Park
+- paragraph: 10:07:56 PM
+- alert
+- button "Open Next.js Dev Tools":
+  - img
+```

@@ -1,0 +1,61 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - heading "🏞️ National Parks Voting" [level=1]
+  - paragraph: Vote for your favorite national park and see the ELO rankings!
+- heading "Which park do you prefer?" [level=2]
+- 'button "Glacier Bay National Park Glacier Bay National Park ELO: 1200 Votes: 0"':
+  - img "Glacier Bay National Park"
+  - heading "Glacier Bay National Park" [level=3]
+  - text: "ELO: 1200 Votes: 0"
+- 'button "Everglades National Park Everglades National Park ELO: 1200 Votes: 0"':
+  - img "Everglades National Park"
+  - heading "Everglades National Park" [level=3]
+  - text: "ELO: 1200 Votes: 0"
+- heading "🏆 Top Rankings" [level=2]
+- text: "1"
+- paragraph: Cuyahoga Valley National Park
+- paragraph: "ELO: 1231 • 2W-0L"
+- text: "2"
+- paragraph: Bryce Canyon National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "3"
+- paragraph: North Cascades National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "4"
+- paragraph: Redwood National Park
+- paragraph: "ELO: 1217 • 1W-0L"
+- text: "5"
+- paragraph: Olympic National Park
+- paragraph: "ELO: 1216 • 1W-0L"
+- text: "6"
+- paragraph: Zion National Park
+- paragraph: "ELO: 1216 • 1W-0L"
+- text: "7"
+- paragraph: Haleakala National Park
+- paragraph: "ELO: 1202 • 1W-1L"
+- text: "8"
+- paragraph: American Samoa National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "9"
+- paragraph: Arches National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- text: "10"
+- paragraph: Badlands National Park
+- paragraph: "ELO: 1200 • 0W-0L"
+- heading "📊 Recent Votes" [level=2]
+- paragraph: Cuyahoga Valley National Park beat Haleakala National Park
+- paragraph: 10:07:47 PM
+- paragraph: Haleakala National Park beat Black Canyon of the Gunnison National Park
+- paragraph: 10:07:47 PM
+- paragraph: Zion National Park beat Channel Islands National Park
+- paragraph: 10:07:46 PM
+- paragraph: Redwood National Park beat Rocky Mountain National Park
+- paragraph: 10:07:46 PM
+- paragraph: Rocky Mountain National Park beat Kings Canyon National Park
+- paragraph: 10:07:45 PM
+- alert
+- button "Open Next.js Dev Tools":
+  - img
+```

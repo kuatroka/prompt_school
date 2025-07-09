@@ -1,0 +1,8 @@
+{
+  "/api/parks/pair/route": "app/api/parks/pair/route.js",
+  "/api/parks/route": "app/api/parks/route.js",
+  "/api/votes/route": "app/api/votes/route.js",
+  "/api/vote/route": "app/api/vote/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js"
+}
