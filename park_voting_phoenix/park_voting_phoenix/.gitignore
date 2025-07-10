@@ -40,3 +40,4 @@ npm-debug.log
 *.db-*
 
 _build/tailwind-macos-arm64
+*.DS_Store
