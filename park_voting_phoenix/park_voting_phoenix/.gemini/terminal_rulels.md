@@ -1,0 +1,1 @@
+- I am using `fish` as my shell. So in order for you to be able to run terminal commands always preppend `fish -c` to the command You plan to execute
