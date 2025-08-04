@@ -23,16 +23,16 @@ defmodule PhxLiveSvelteFreWeb.Layouts do
       <div class="flex-none">
         <ul class="flex flex-column px-1 space-x-4 items-center">
           <li>
-            <a href="https://phoenixframework.org/" class="btn btn-ghost">Website</a>
+            <a href="https://phoenixframework.org/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">Website</a>
           </li>
           <li>
-            <a href="https://github.com/phoenixframework/phoenix" class="btn btn-ghost">GitHub</a>
+            <a href="https://github.com/phoenixframework/phoenix" class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">GitHub</a>
           </li>
           <li>
             <.theme_toggle />
           </li>
           <li>
-            <a href="https://hexdocs.pm/phoenix/overview.html" class="btn btn-primary">
+            <a href="https://hexdocs.pm/phoenix/overview.html" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700">
               Get Started <span aria-hidden="true">&rarr;</span>
             </a>
           </li>
@@ -100,8 +100,8 @@ defmodule PhxLiveSvelteFreWeb.Layouts do
   """
   def theme_toggle(assigns) do
     ~H"""
-    <div class="card relative flex flex-row items-center border-2 border-base-300 bg-base-300 rounded-full">
-      <div class="absolute w-[33%] h-full rounded-full border-1 border-base-200 bg-base-100 brightness-200 left-0 [[data-theme=light]_&]:left-[33%] [[data-theme=dark]_&]:left-[66%] transition-[left]" />
+    <div class="relative flex flex-row items-center border-2 border-gray-200 bg-gray-100 rounded-full">
+      <div class="absolute w-[33%] h-full rounded-full border border-gray-300 bg-white left-0 [[data-theme=light]_&]:left-[33%] [[data-theme=dark]_&]:left-[66%] transition-[left]" />
 
       <button phx-click={JS.dispatch("phx:set-theme", detail: %{theme: "system"})} class="flex p-2">
         <.icon name="hero-computer-desktop-micro" class="size-4 opacity-75 hover:opacity-100" />

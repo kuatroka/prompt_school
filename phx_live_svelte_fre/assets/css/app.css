@@ -1,6 +1,11 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
+
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+@source "./js/**/*.{js,ts,svelte}";
+@source "../lib/*_web/**/*.{ex,eex,leex,heex}";
+@source "../lib/*_web/**/*_live.ex";
 
 /* Make LiveView wrapper divs transparent for layout */
 [data-phx-root-id] { display: contents }

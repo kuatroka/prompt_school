@@ -41,12 +41,11 @@ config :esbuild,
     env: %{"NODE_PATH" => Path.expand("../deps", __DIR__)}
   ]
 
-# Configure tailwind (the version is required)
+# Configure tailwind v4 (no config file needed)
 config :tailwind,
-  version: "3.4.0",
+  version: "4.0.0-alpha.25",
   phx_live_svelte_fre: [
     args: ~w(
-      --config=assets/tailwind.config.js
       --input=assets/css/app.css
       --output=priv/static/assets/css/app.css
     ),
