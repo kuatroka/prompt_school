@@ -1,0 +1,29 @@
+{
+  "name": "phx_live_svelte_fre_assets",
+  "version": "1.0.0",
+  "description": "Assets for Phoenix LiveView + Svelte project",
+  "main": "js/app.js",
+  "scripts": {
+    "build": "esbuild js/app.js --bundle --outdir=../priv/static/assets --external:/fonts/* --external:/images/*",
+    "watch": "esbuild js/app.js --bundle --outdir=../priv/static/assets --external:/fonts/* --external:/images/* --watch"
+  },
+  "dependencies": {
+    "phoenix": "file:../deps/phoenix",
+    "phoenix_html": "file:../deps/phoenix_html",
+    "phoenix_live_view": "file:../deps/phoenix_live_view"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.15",
+    "esbuild": "^0.20.0",
+    "esbuild-svelte": "^0.8.0",
+    "svelte": "^4.2.0",
+    "tailwindcss": "^3.4.0",
+    "topbar": "^2.0.0",
+    "shadcn-svelte": "^0.11.0",
+    "lucide-svelte": "^0.400.0",
+    "tailwind-merge": "^2.0.0",
+    "clsx": "^2.0.0",
+    "tailwind-variants": "^0.1.20"
+  }
+}

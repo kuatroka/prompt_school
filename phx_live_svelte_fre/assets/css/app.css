@@ -1,0 +1,8 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Make LiveView wrapper divs transparent for layout */
+[data-phx-root-id] { display: contents }
+
+/* This file is for your main application CSS */
