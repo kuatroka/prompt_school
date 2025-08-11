@@ -1,0 +1,27 @@
+{
+  "name": "phx_inertia_svelte_template_assets",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "bun run build.js --watch",
+    "build:once": "bun run build.js",
+    "build:css": "tailwindcss -i css/app.css -o ../priv/static/assets/app.css --watch",
+    "deploy": "tailwindcss -i css/app.css -o ../priv/static/assets/app.css --minify && bun run build.js --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "next",
+    "daisyui": "latest",
+    "esbuild": "^0.25.8",
+    "esbuild-plugin-import-glob": "^0.1.1",
+    "esbuild-svelte": "^0.9.3",
+    "svelte": "^5.38.0",
+    "svelte-preprocess": "^6.0.3",
+    "tailwindcss": "next"
+  },
+  "dependencies": {
+    "live_svelte": "file:../deps/live_svelte",
+    "phoenix": "file:../deps/phoenix",
+    "phoenix_html": "file:../deps/phoenix_html",
+    "phoenix_live_view": "file:../deps/phoenix_live_view"
+  }
+}
