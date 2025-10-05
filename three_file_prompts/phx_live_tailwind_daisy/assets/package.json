@@ -1,0 +1,17 @@
+{
+  "name": "phx_live_tailwind_daisy",
+  "version": "0.1.0",
+  "description": "Phoenix LiveView app with Tailwind CSS and DaisyUI",
+  "scripts": {
+    "deploy": "cd .. && mix assets.deploy && rm -f _build/esbuild"
+  },
+  "repository": {},
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "phoenix": "file:../deps/phoenix",
+    "phoenix_html": "file:../deps/phoenix_html",
+    "phoenix_live_view": "file:../deps/phoenix_live_view"
+  },
+  "devDependencies": {}
+}
