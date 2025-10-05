@@ -35,3 +35,7 @@ phx_live_tailwind_daisy-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Ignore SQLite database files.
+*.db
+*.db-*
+
