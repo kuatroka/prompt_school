@@ -2,10 +2,7 @@ import Config
 
 # Configure your database
 config :phx_live_tailwind_daisy, PhxLiveTailwindDaisy.Repo,
-  username: "postgres",
-  password: "postgres",
-  hostname: "localhost",
-  database: "phx_live_tailwind_daisy_dev",
+  database: "priv/dev.db",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
