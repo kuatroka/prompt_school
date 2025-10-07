@@ -22,10 +22,9 @@ config :phx_live_tailwind_daisy, PhxLiveTailwindDaisyWeb.Endpoint,
   debug_errors: true,
   secret_key_base: "ovOXicPisgHHhQ/3bznr1vUcURofFAafiCirxwy90eS+tnf2jrLIrLoYAjfhhi5+",
   watchers: [
-    esbuild:
-      {Esbuild, :install_and_run, [:phx_live_tailwind_daisy, ~w(--sourcemap=inline --watch)]},
-    tailwind: {Tailwind, :install_and_run, [:phx_live_tailwind_daisy, ~w(--watch)]}
-  ]
+    vite: {Bun, :install_and_run, [:vite, ~w(dev)]}
+  ],
+  static_url: [host: "localhost", port: 5173]
 
 # ## SSL Support
 #

@@ -1,0 +1,31 @@
+{
+  "css/app.css": {
+    "file": "assets/app-C0x7NxH8.css",
+    "src": "css/app.css",
+    "isEntry": true
+  },
+  "js/app.js": {
+    "file": "assets/app-D08_CyF6.js",
+    "name": "app",
+    "src": "js/app.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "svelte/Counter.svelte"
+    ],
+    "css": [
+      "assets/app-C0x7NxH8.css"
+    ]
+  },
+  "svelte/Counter.svelte": {
+    "file": "assets/Counter-F_AB92n4.js",
+    "name": "Counter",
+    "src": "svelte/Counter.svelte",
+    "isDynamicEntry": true,
+    "imports": [
+      "js/app.js"
+    ],
+    "css": [
+      "assets/app-C0x7NxH8.css"
+    ]
+  }
+}

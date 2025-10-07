@@ -46,11 +46,12 @@ defmodule PhxLiveTailwindDaisy.MixProject do
       {:ecto_sqlite3, "~> 0.17"},
       {:phoenix_html, "~> 4.1"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 1.1.0"},
+      {:phoenix_live_view, "~> 1.1.14"},
+      {:inertia, "~> 2.5"},
+      {:phoenix_vite, "~> 0.1"},
+      {:bun, "~> 1.5", runtime: Mix.env() == :dev},
       {:lazy_html, ">= 0.1.0", only: :test},
       {:phoenix_live_dashboard, "~> 0.8.3"},
-      {:esbuild, "~> 0.10", runtime: Mix.env() == :dev},
-      {:tailwind, "~> 0.3", runtime: Mix.env() == :dev},
       {:heroicons,
        github: "tailwindlabs/heroicons",
        tag: "v2.2.0",
@@ -81,13 +82,9 @@ defmodule PhxLiveTailwindDaisy.MixProject do
       "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
-      "assets.setup": ["tailwind.install --if-missing", "esbuild.install --if-missing"],
-      "assets.build": ["compile", "tailwind phx_live_tailwind_daisy", "esbuild phx_live_tailwind_daisy"],
-      "assets.deploy": [
-        "tailwind phx_live_tailwind_daisy --minify",
-        "esbuild phx_live_tailwind_daisy --minify",
-        "phx.digest"
-      ],
+      "assets.setup": ["bun.install --if-missing", "cmd --cd assets bun install"],
+      "assets.build": ["cmd --cd assets bun vite build"],
+      "assets.deploy": ["cmd --cd assets bun vite build", "phx.digest"],
       precommit: ["compile --warning-as-errors", "deps.unlock --unused", "format", "test"]
     ]
   end

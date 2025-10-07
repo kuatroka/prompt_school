@@ -10,6 +10,15 @@ defmodule PhxLiveTailwindDaisyWeb.Router do
     plug :put_secure_browser_headers
   end
 
+  pipeline :inertia do
+    plug :accepts, ["html"]
+    plug :fetch_session
+    plug :fetch_flash
+    plug :protect_from_forgery
+    plug :put_secure_browser_headers
+    plug Inertia.Plug
+  end
+
   pipeline :api do
     plug :accepts, ["json"]
   end
@@ -19,6 +28,14 @@ defmodule PhxLiveTailwindDaisyWeb.Router do
 
     get "/", PageController, :home
     live "/demo", DemoLive
+  end
+
+  scope "/inertia", PhxLiveTailwindDaisyWeb do
+    pipe_through :inertia
+
+    get "/counter", InertiaCounterController, :index
+    post "/counter/increment", InertiaCounterController, :increment
+    post "/counter/decrement", InertiaCounterController, :decrement
   end
 
   # Other scopes may use custom stacks.

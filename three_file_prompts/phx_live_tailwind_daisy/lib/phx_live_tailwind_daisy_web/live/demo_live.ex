@@ -1,11 +1,22 @@
 defmodule PhxLiveTailwindDaisyWeb.DemoLive do
   use PhxLiveTailwindDaisyWeb, :live_view
 
+  alias PhxLiveTailwindDaisy.{Repo, Counter}
+
   @impl true
   def mount(_params, _session, socket) do
+    # Get or create the counter from database
+    counter = case Repo.get(Counter, 1) do
+      nil ->
+        %Counter{id: 1, value: 0}
+        |> Repo.insert!()
+      existing_counter ->
+        existing_counter
+    end
+
     {:ok,
      socket
-     |> assign(:counter, 0)
+     |> assign(:counter, counter.value)
      |> assign(:show_modal, false)
      |> assign(:form_name, "")
      |> assign(:form_message, "")}
@@ -13,12 +24,26 @@ defmodule PhxLiveTailwindDaisyWeb.DemoLive do
 
   @impl true
   def handle_event("increment", _, socket) do
-    {:noreply, assign(socket, :counter, socket.assigns.counter + 1)}
+    counter = Repo.get!(Counter, 1)
+    new_value = counter.value + 1
+
+    counter
+    |> Counter.changeset(%{value: new_value})
+    |> Repo.update!()
+
+    {:noreply, assign(socket, :counter, new_value)}
   end
 
   @impl true
   def handle_event("decrement", _, socket) do
-    {:noreply, assign(socket, :counter, socket.assigns.counter - 1)}
+    counter = Repo.get!(Counter, 1)
+    new_value = counter.value - 1
+
+    counter
+    |> Counter.changeset(%{value: new_value})
+    |> Repo.update!()
+
+    {:noreply, assign(socket, :counter, new_value)}
   end
 
   @impl true
@@ -42,7 +67,9 @@ defmodule PhxLiveTailwindDaisyWeb.DemoLive do
       <!-- Navbar -->
       <div class="navbar bg-base-100 shadow-lg">
         <div class="flex-1">
-          <a class="btn btn-ghost text-xl">Phoenix + Tailwind + DaisyUI</a>
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-xl font-bold">Phoenix + Tailwind + DaisyUI</a></li>
+          </ul>
         </div>
         <div class="flex-none">
           <ul class="menu menu-horizontal px-1">

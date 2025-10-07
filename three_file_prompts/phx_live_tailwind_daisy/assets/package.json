@@ -1,20 +1,31 @@
 {
   "name": "phx_live_tailwind_daisy",
   "version": "0.1.0",
+  "type": "module",
   "description": "Phoenix LiveView app with Tailwind CSS and DaisyUI",
   "scripts": {
-    "deploy": "cd .. && mix assets.deploy && rm -f _build/esbuild"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {},
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@inertiajs/svelte": "^2.2.7",
+    "axios": "^1.11.0",
     "phoenix": "file:../deps/phoenix",
     "phoenix_html": "file:../deps/phoenix_html",
-    "phoenix_live_view": "file:../deps/phoenix_live_view"
+    "phoenix_live_view": "file:../deps/phoenix_live_view",
+    "svelte": "^5.0.0",
+    "topbar": "^3.0.0"
   },
   "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.2.0",
+    "@tailwindcss/vite": "^4.1.0",
     "daisyui": "^5.1.27",
-    "tailwindcss": "^4.0.0"
+    "phoenix_vite": "file:../deps/phoenix_vite",
+    "tailwindcss": "^4.1.0",
+    "vite": "^6.3.0"
   }
 }
